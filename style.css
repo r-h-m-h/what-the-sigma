@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.transition{
+    width: 150px;
+    height: 150px;
+    margin: 400px auto;
+    align-items: center;
+    animation: shake-grow 1s infinite;
+    background-image: url(./download.jfif);
+    background-size: cover;
+    background-position: center;
+}
+button{
+    width: 100px;
+    height: 100px;
+    display: block;
+     margin: 400px auto;
+    align-items: center; 
+   
+}
+@keyframes shake-grow {
+    0%, 100% {
+        transform: translate(0, 0) scale(10);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translate(-10px, 0) scale(1.2);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translate(10px, 0) scale(1.2);
+    }
+}
